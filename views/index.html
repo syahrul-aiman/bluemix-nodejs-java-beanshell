@@ -6,32 +6,35 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/stylesheets/style.css">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="/scripts/script.js"></script>
 </head>
 
 <body style="padding: 10px; margin: 0px">
 	<div style="padding-right:10px">
-		<div>
-			<input id="params" style="width: 100%" placeholder="JAVA parameters" /><br /><br />
-			<textarea id="code" rows="10" style="width: 100%"
-				placeholder="JAVA Code"></textarea>
+
+		<div class="form-group">
+			<label for="params">JAVA parameters :</label>
+			<input id="params" class="form-control" name="params" />
 		</div>
-		<br />
-		<div>
-			<input id="submit" type="submit" style="width: 100%" />
+
+		<div class="form-group">
+			<label for="code">JAVA code :</label>			
+			<textarea id="code" class="form-control" rows="10" name="code"></textarea>
 		</div>
-		<br />
+
 		<div>
-			<textarea id="result" rows="10" style="width: 49%"
-				placeholder="Results"></textarea>
-			<textarea id="error" rows="10" style="width: 49%"
-				placeholder="Errors"></textarea>
+			<input id="submit" type="submit" class="btn btn-info col-xs-12" value="Execute"/>
+		</div>
+		
+		<br/><br/>
+
+		<div>
+			<label for="result">Result / Error :</label><br/>
+			<textarea id="result" rows="10" class="col-xs-6" placeholder="Result"></textarea>
+			<textarea id="error" rows="10" class="col-xs-6" placeholder="Error"></textarea>
 		</div>
 	</div>
 </body>
