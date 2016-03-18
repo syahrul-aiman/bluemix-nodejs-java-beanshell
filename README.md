@@ -1,6 +1,6 @@
 # Bluemix Node.js Java BeanShell Sample
 
-Example project using the [Custom Node.js Java buildpack](https://github.com/syahrul-aiman/nodejs-java-buildpack).
+Sample project using the [Custom Node.js Java buildpack](https://github.com/syahrul-aiman/nodejs-java-buildpack).
 
 Java will run the BeanShell's bsh-2.0b6.jar file and interprets the scripts submitted. 
 
