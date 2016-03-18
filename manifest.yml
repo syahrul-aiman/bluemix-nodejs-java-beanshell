@@ -1,0 +1,9 @@
+applications:
+- path: .
+  memory: 128M
+  instances: 1
+  domain: mybluemix.net
+  name: nodejsjavabsh
+  host: nodejsjavabsh-${random-word}
+  command: node index.js
+  buildpack: https://github.com/syahrul-aiman/nodejs-java-buildpack  
