@@ -1,6 +1,6 @@
 # Bluemix Node.js JAVA BeanShell Sample
 
-Example project using the [Node.js JAVA buildpack](https://github.com/syahrul-aiman/nodejs-java-buildpack).
+Example project using the [Custom Node.js JAVA buildpack](https://github.com/syahrul-aiman/nodejs-java-buildpack).
 
 JAVA will run the BeanShell's bsh-2.0b6.jar file and interprets the scripts submitted. 
 
@@ -22,13 +22,14 @@ JAVA will run the BeanShell's bsh-2.0b6.jar file and interprets the scripts subm
 #### Without It
 
 * Clone the repo and change directory to it
+* Update `manifest.yml` and change the host to your preferred host
 * Deploy the app to Bluemix: `cf push`
 
 # Using it
 
-- Go to the http://hostname.mybluemix.net/ or http://hostname.mybluemix.net/index
+- Go to the `http://hostname.mybluemix.net/` or `http://hostname.mybluemix.net/index`
 
-- Fill in the "Java Code" field, for example
+- Fill in the `Java Code` field, for example
 ```java
 System.out.println("HelloWorld");
 ```
