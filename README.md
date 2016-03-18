@@ -11,6 +11,7 @@ JAVA will run the BeanShell's bsh-2.0b6.jar file and interprets the scripts subm
 * `npm install`
 * Install java locally
 * Run the server with: `npm start` or `node index.js`  
+* Server should run on port `3000` e.g: `http://localhost:3000` 
 * By default it will use a path of / or /index for the main form.
 
 ### Deployment on Bluemix
@@ -27,11 +28,15 @@ JAVA will run the BeanShell's bsh-2.0b6.jar file and interprets the scripts subm
 
 # Using it
 
-- Go to the `http://hostname.mybluemix.net/` or `http://hostname.mybluemix.net/index`
+* Go to the `http://hostname.mybluemix.net/` or `http://hostname.mybluemix.net/index`
 
-- Fill in the `Java Code` field, for example
+* Fill in the `Java Code` field, for example
 ```java
 System.out.println("HelloWorld");
 ```
 
-- Click Submit
+* Click Execute
+
+* Result / Error will be shown below
+
+

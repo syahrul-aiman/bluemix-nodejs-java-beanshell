@@ -45,7 +45,7 @@ app.all(['/','/index'], function (req, res, next) {
 	res.render('index.html');
 });
 
-var port = process.env.PORT || 1337;
+var port = process.env.PORT || 3000;
 app.listen(port, function() {
-	console.log("running");
+	console.log("Server is running on port " + port);
 });
