@@ -33,7 +33,7 @@ app.post('/code', function(req, res) {
 			return;
 		}
 	
-		var cmd = "java -cp lib/bsh-2.0b6.jar " + params + "bsh.Interpreter tmp.bsh";
+		var cmd = "java -cp lib/bsh-2.1.8.jar " + params + "bsh.Interpreter tmp.bsh";
 		exec(cmd, {shell: '/bin/bash'}, function (err, stdout, stderr) {
 			res.json({out: stdout, err: stderr});
 			return;
